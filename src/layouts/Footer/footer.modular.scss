@@ -1,0 +1,81 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, #7b205e, #701657, #5b1444);
+  }
+  
+  .foot2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  
+  .logof {
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+  
+  .logof p {
+    margin-left: 1rem;
+  }
+  
+  .social {
+    margin-top: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 2.5rem;
+    background-color: #7b205e;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .joinnews p {
+    font-size: 1.5rem;
+  }
+  
+  .joinnews input {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    color: black;
+  }
+  
+  .submit {
+    height: 1.75rem;
+    width: 4rem;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .socialm p {
+    margin-top: 0.5rem;
+    font-size: 1.35rem;
+  }
+  
+  .insta {
+    margin-right: 0.5rem;
+  }
+  
+  .face {
+    margin-right: 0.5rem;
+  }
+  
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+  }
+  
