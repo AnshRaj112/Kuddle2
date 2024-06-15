@@ -13,13 +13,13 @@ import Sidebarmob from "./layouts/Sidebarmob/Sidebarmob";
 function App() {
   return (
     <>
-      {/* <NavbarPro/> */}
-      {/* <Hero/> */}
-      {/* <Meettxt/> */}
-      {/* <Whychoose/>  */}
-      {/* <Footer/>    */}
-      {/* <Sidebarmob/> */}
-      {/* <Sidebar/> */}
+   <NavbarPro/> 
+   <Hero/> 
+   <Meettxt/>
+   <Whychoose/> 
+   <Footer/> 
+   <Sidebarmob/>
+   {/* <Sidebar/> */}
     </>
   )
 }
