@@ -1,0 +1,23 @@
+@media screen and (max-width: 597px) {
+
+    .sidebarmob{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+        width: 70%;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: fixed;
+        // right: 50%;
+        // left: 50%;
+        z-index: 100;
+        bottom: 3rem;
+        left: 15%;
+        right: 15%;
+    }
+
+}

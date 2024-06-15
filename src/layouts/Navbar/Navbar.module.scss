@@ -1,0 +1,239 @@
+*{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.containernav{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img{
+    height: 4rem;
+    width: 13rem;
+    background-image: url(https://uploads-ssl.webflow.com/66096a30ae498a9206aee6a0/660b8ac05d0577df14015364_kuddle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menulinks ul li a{
+    cursor: pointer;
+}
+
+.hamburger{
+    // display: none;
+    padding-right: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.close{
+    display: flex;
+    cursor: pointer;
+}
+
+//medialinks
+
+@media (max-width:1050px) {
+
+    .logo{
+        margin-left: 3.5rem;
+    }
+
+    .hamburger{
+        margin-right: 3.5rem;
+    }
+
+    .menulinks{
+        display: none;
+    }
+
+    .mobilemenu{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 6rem 3.5rem 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: linear-gradient(to right, #3a0d2c,#2E0A23,#24081b);
+        background: linear-gradient(to bottom, #3a0d2c,#2E0A23,#24081b);
+        z-index: 99;
+    }
+
+    .mobilemenu ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .mobilemenu ul li a{
+        position: relative;
+        font-size: 1.35rem;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        transition: opacity .4s;
+    }
+
+    .txt{
+        position: relative;
+        transition: margin .4s;
+    }
+
+    .txt::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width .4s ease-out;
+    }
+
+    //animation
+    .links:hover span{
+        margin-left: 2.5rem;
+    }
+
+    .links:hover span::after{
+        width: 100%;
+    }
+
+    .list:has(.links:hover) .links:not(:hover){
+        opacity: .4;
+    }
+
+    .close{
+        position: absolute;
+        top: 2.25rem;
+        right: 8vw;
+        font-size: 2rem;
+    }
+
+    .hamburger{
+        font-size: 2rem;
+    }
+
+    
+}
+
+
+
+@media (max-width:768px) {
+    .img{
+        height: 3rem;
+        width: 10rem;
+    }
+}
+
+@media (max-width:650px) {
+    .logo{
+        margin-left: 2.5rem;
+    }
+
+    .hamburger{
+        margin-right: 2.5rem;
+    }
+}
+
+@media (max-width:425px) {
+
+    .hamburger{
+        font-size: 1.5rem;
+    }
+    .logo{
+        margin-left: 1rem;
+    }
+
+    .hamburger{
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width:1050px){
+    nav{
+        margin-inline: auto;
+    }
+
+    .logo{
+        margin-left: 3.5rem;
+    }
+
+    .menulinks{
+        margin-right: 3.5rem;
+        font-size: 1.25rem;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .list{
+        flex-direction: row;
+        column-gap: 3.5rem;
+    }
+    .menulinks ul{
+        display: flex;
+        align-items: center;
+        column-gap: 3.5rem;
+        margin-right: 3.5rem;
+    }
+
+    .mobilemenu ul li a{
+        position: relative;
+        font-size: 1.35rem;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        transition: opacity .4s;
+    }
+
+    .txt{
+        position: relative;
+        transition: margin .4s;
+    }
+
+    .txt::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width .4s ease-out;
+    }
+
+    //animation
+    .links:hover span{
+        margin-right: 2.5rem;
+    }
+
+    .links:hover span::after{
+        width: 100%;
+    }
+
+    .list:has(.links:hover) .links:not(:hover){
+        opacity: .4;
+    }
+
+
+} 

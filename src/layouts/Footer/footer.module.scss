@@ -1,0 +1,137 @@
+@import "/src/assets/styles/Global.scss";
+
+footer{
+    background-color: $background-color;
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap:1rem;
+}
+
+.img{
+    height: 3rem;
+    width: 10rem;
+    background-image: url(https://uploads-ssl.webflow.com/66096a30ae498a9206aee6a0/660b8ac05d0577df14015364_kuddle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.txt{
+    font-size: 1rem;
+    width: 30%;
+    // margin-left: 2rem;
+    // margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.joinnews p{
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.mail{
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    width: 14rem;
+}
+
+.subs{
+    margin-left: 0.25rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.socialm p{
+    margin-left: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.socialm a{
+    font-size: 1.5rem;
+    margin-left: 1.75rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1120px) {
+    .txt{
+        font-size: 0.9rem;
+    }
+
+    .img{
+        height: 3rem;
+        width: 10rem;
+    }
+
+    .socialm p{
+        margin-left: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+    
+    .socialm a{
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .container{
+       flex-direction: column;
+    }
+
+    .logof{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .txt{
+        margin-bottom: 2rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .joinnews{
+        margin-bottom: 2rem;
+    }
+
+    .joinnews p{
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .socialm{
+        margin-bottom: 2rem;
+    }
+
+    .socialm p{
+        margin-left: 0rem;
+        margin-bottom: 0.75rem;
+        text-align: center;
+    }
+    
+    .socialm a{
+        margin-left: 1.25rem;
+        margin-right: 1rem;
+    }
+
+}
