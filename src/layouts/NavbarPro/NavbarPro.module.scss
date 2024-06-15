@@ -1,0 +1,152 @@
+nav{
+    height: 4.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // position: relative;
+    // z-index: 1;
+    /* background-color: rgb(240, 33, 33); */
+}
+
+.logo{
+    height: 3rem;
+    width: 10rem;
+    background-image: url(https://uploads-ssl.webflow.com/66096a30ae498a9206aee6a0/660b8ac05d0577df14015364_kuddle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accpic{
+    margin-top: 5px;
+}
+
+.userpic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.user{
+    height: 3.75rem;
+    width: 200px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    position: absolute;
+    top: 0.25rem;
+    right: 2rem;
+    border-radius: 50px;
+    border: 1px solid pink;
+    cursor: pointer;
+    padding-left: 5px;
+
+}
+
+.username{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    max-width: 120px;
+}
+
+.username span{
+    margin-right: 10px;
+}
+
+.user:hover{
+    background-color: #49233d;
+    box-shadow: grey;
+    transition: all 1s ease;
+}
+
+.username p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 5px;
+    width: 90px;
+}
+
+.active{
+    max-height: 500px;
+    overflow: clip;
+    transition: all 10s ease;
+}
+.deactive{
+    overflow: hidden; 
+    max-height: 0;
+}
+
+.profiledropdownlist{
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 68px;
+    right: 2rem;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: white;
+    transition: all 0.5s ease;
+}
+
+.dropdownlistitem{
+    list-style: none;
+    padding: 0.5rem 0 0.5rem 1rem;
+    /* font-size: 1.1rem; */
+}
+
+.dropdownlistitem div{
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2.3rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+.dropdownlistitem a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropdownlistitem:hover {
+    padding-left: 1.5rem;
+    transition: all 0.2s ease;
+    background-color: #49233d;
+}
+
+@media screen and (max-width:768px) {
+
+    nav{
+        width: 100%;
+    }
+
+    .user{
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        right: 20px;
+        padding-left: 4px;
+    }
+
+    .username{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:596px) {
+
+    nav{
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+}

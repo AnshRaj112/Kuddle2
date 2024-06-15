@@ -1,0 +1,149 @@
+.hero2{
+    height: 42rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    // background-color: pink;
+}
+
+.hero2 p{
+    position: relative;
+    top: 22vh;
+}
+
+.hero2 span{
+    color: rgb(231, 16, 231);
+}
+
+@media screen and (max-width: 1137px) {
+    .hero2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .hero2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 893px) {
+    .hero2 {
+        font-size: 2.75rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        height: 32rem;
+    }
+
+    .hero2 p{
+        position: relative;
+        top: 25vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero2 {
+        font-size: 2.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .hero2 p{
+        position: relative;
+        top: 28vh;
+    }
+}
+
+@media screen and (max-width: 707px) {
+    .hero2 {
+        font-size: 2.25rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .hero2 p{
+        position: relative;
+        top: 32vh;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .hero2 {
+        font-size: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .hero2 p{
+        position: relative;
+        top: 35vh;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .hero2 {
+        font-size: 1.8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 26rem;
+    }
+
+    .hero2 p{
+        position: relative;
+        top: 10rem;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .hero2 {
+        font-size: 1.6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .hero2 p{
+        position: relative;
+        top: 10rem;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .hero2 {
+        font-size: 1.4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .hero2 p{
+        position: relative;
+        top: 10rem;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .hero2 {
+        font-size: 1.4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero2 p{
+        position: relative;
+        top: 10rem;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .hero2 {
+        font-size: 1.3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero2 p{
+        position: relative;
+        top: 10rem;
+    }
+}
