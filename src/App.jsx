@@ -13,6 +13,7 @@ import Sidebarmob from "./layouts/Sidebarmob/Sidebarmob";
 import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
 import Chat from "./pages/Chat/Chat";
+import EditProfile from "./pages/Profile/EditProfile";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/editprofile" element={<EditProfile />} />
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>
