@@ -21,7 +21,7 @@ const Premium = lazy(() => import("./pages/Premium/Premium"))
 //microInteraction
 import Load from "./microInteraction/Load/Load";
 
-function App() {
+export default function App() {
   return (
     <>
       <Router>
@@ -41,5 +41,3 @@ function App() {
     </>
   )
 }
-
-export default App
