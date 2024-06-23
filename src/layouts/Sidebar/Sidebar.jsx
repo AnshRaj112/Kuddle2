@@ -5,6 +5,7 @@ import { FaHeart } from "react-icons/fa";
 import { BsChatFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 import { IoSettingsSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
   const[isActive, setisActive] = useState(false);
@@ -12,7 +13,7 @@ export default function Sidebar() {
     setisActive(!isActive)
   }
 
-  let cs2 = isActive ? '_open_vc7ki_22': '';
+  let cs2 = isActive ? styles.open: '';
   
   return (
     <>
@@ -23,31 +24,31 @@ export default function Sidebar() {
             </div>
             <ul className={styles.navlists}>
                 <li className={styles.likepg}>
-                    <a href="#">
+                    <Link to="/Like">
                         <div className={styles.icon}><FaHeart /></div>
                         <span className={styles.likepgtxt}>Like</span>
-                    </a>
+                    </Link>
                     <span className={styles.tooltip}>Like</span>
                 </li>
                 <li className={styles.chatpg}>
-                    <a href="#">
+                    <Link to="#">
                         <div className={styles.icon}><BsChatFill /></div>
                         <span className={styles.chatpgtxt}>Message</span>
-                    </a>
+                    </Link>
                     <span className={styles.tooltip}>Message</span>
                 </li>
                 <li className={styles.profilepg}>
-                    <a href="#">
+                    <Link to="/MyProfile">
                         <div className={styles.icon}><FaUser /></div>
                         <span className={styles.profilepgtxt}>Profile</span>
-                    </a>
+                    </Link>
                     <span className={styles.tooltip}>Profile</span>
                 </li>
                 <li className={styles.settingspg}>
-                    <a href="#">
+                    <Link to="#">
                         <div className={styles.icon}><IoSettingsSharp /></div>
                         <span className={styles.settingspgtxt}>Settings</span>
-                    </a>
+                    </Link>
                     <span className={styles.tooltip}>Settings</span>
                 </li>
             </ul>

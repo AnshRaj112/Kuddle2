@@ -3,6 +3,7 @@ import styles from './hero.module.scss'
 import { FaArrowRight } from "react-icons/fa6";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom';
 
 export default function hero() {
 
@@ -18,7 +19,7 @@ export default function hero() {
                 <p className={styles.txt1}> Find your dating partner easily by</p>
                 <p className={styles.txt2}>signing up to our website</p>
                 
-                <a href="#"><button className={styles.getstarted}>Get Started  <span><FaArrowRight /></span> </button></a>
+                <Link to="/Signup"><button className={styles.getstarted}>Get Started  <span><FaArrowRight /></span> </button></Link>
             </div>
             <div className={styles.images}>
                 <div className={styles.img1}></div>

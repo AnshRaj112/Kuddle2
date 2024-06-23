@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from 'axios';
+import styles from './Signup.module.scss'
 import { signupRoute } from "../../utils/APIRoutes";
 
 function Signup() {
@@ -85,14 +86,18 @@ function Signup() {
 
     return (
         <>
+        <div className={styles.container}>
+            <video autoPlay muted loop className={styles.video}>
+                <source src="https://cdn.builder.io/o/assets%2F9dc68989f2f648daa89c1c0422282306%2F70f8a3e877a4482bb9096de2c646b48f%2Fcompressed?apiKey=9dc68989f2f648daa89c1c0422282306&token=70f8a3e877a4482bb9096de2c646b48f&alt=media&optimized=true " type="video/mp4" className={styles.v}></source>
+            </video>
             <FormContainer>
-                <form onSubmit={handleSubmit}>
-                    <div className="brand">
-                        <img src="" alt="Kuddle Logo" />
-                        <h1>Kuddle</h1>
+                <form onSubmit={handleSubmit} className={styles.signupform}>
+                    <div className={styles.brand}>
+                        <h1>Sign Up</h1>
                     </div>
                     {["firstName", "lastName", "phone", "email", "password", "confirmPassword"].map((field) => (
-                        <div className="inputbox" key={field}>
+                        <div className={styles.inputbox} key={field}>
+                            <label htmlFor={field}>{field.charAt(0).toUpperCase() + field.slice(1).replace(/([A-Z])/g, ' $1')}</label>
                             <input
                                 type={field === "password" || field === "confirmPassword" ? "password" : field === "email" ? "email" : "text"}
                                 name={field}
@@ -100,11 +105,10 @@ function Signup() {
                                 placeholder={field.charAt(0).toUpperCase() + field.slice(1).replace(/([A-Z])/g, ' $1')}
                                 onChange={handleChange}
                             />
-                            <label htmlFor={field}>{field.charAt(0).toUpperCase() + field.slice(1).replace(/([A-Z])/g, ' $1')}</label>
                         </div>
                     ))}
-                    <div className="inputbox">
-                        <label htmlFor="year">Year</label>
+                    <div className={styles.inputbox}>
+                        <label htmlFor="year" className={styles.year}>Year</label>
                         <select name="year" required onChange={handleChange} value={values.year}>
                             <option value="" hidden>Year</option>
                             {["Year 1", "Year 2", "Year 3", "Year 4"].map((year, index) => (
@@ -112,22 +116,23 @@ function Signup() {
                             ))}
                         </select>
                     </div>
-                    <div className="inputbox">
-                        <label htmlFor="branch">Branch</label>
-                        <select name="branch" required onChange={handleChange} value={values.branch}>
+                    <div className={styles.inputbox}>
+                        <label htmlFor="branch" >Branch</label>
+                        <select name="branch" required onChange={handleChange} value={values.branch} className={styles.branch}>
                             <option value="" hidden>Branch</option>
                             {["Civil Engineering", "Mechanical Engineering", "Mechanical Engineering (Automobile)", "Electrical Engineering", "Electronics & Tele-Communication Engineering", "Computer Science Engineering", "Information Technology", "Electronics & Electrical Engineering", "Electronics and Instrumentation", "Aerospace Engineering", "Mechatronics Engineering", "Production Engineering", "Electronics and Computer Science Engineering", "Communication Engineering", "Medical Electronics Engineering", "Computer Science & Communication Engineering", "Computer Science & Systems Engineering", "Chemical Technology"].map((branch, index) => (
                                 <option key={index} value={branch}>{branch}</option>
                             ))}
                         </select>
                     </div>
-                    <button type="submit">Sign Up</button>
+                    <button type="submit"className={styles.signbut}>Sign Up</button>
                     <span>
-                        Already have an account? <Link to="/login">Login</Link>
+                        Already have an account? <Link to="/login" className={styles.login}>Login</Link>
                     </span>
                 </form>
             </FormContainer>
             <ToastContainer />
+            </div>
         </>
     );
 }

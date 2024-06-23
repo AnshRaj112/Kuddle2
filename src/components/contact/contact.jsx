@@ -1,10 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styles from './contact.module.scss'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 export default function contact() {
+
+    useEffect(()=>{
+        AOS.init({duration:2000});
+      },[]);
+
   return (
     <>
-        <div className={styles.main}>
+        <div className={styles.main} data-aos="fade-up">
             <div className={styles.left}>
                 <div className={styles.box}>
                 <h1>Have Questions?</h1>

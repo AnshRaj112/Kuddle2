@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import styles from './Login.module.scss'
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -71,14 +72,18 @@ function Login() {
 
     return (
         <>
+        <div className={styles.container}>
+            <video autoPlay muted loop className={styles.video}>
+                <source src="https://cdn.builder.io/o/assets%2F9dc68989f2f648daa89c1c0422282306%2F70f8a3e877a4482bb9096de2c646b48f%2Fcompressed?apiKey=9dc68989f2f648daa89c1c0422282306&token=70f8a3e877a4482bb9096de2c646b48f&alt=media&optimized=true " type="video/mp4" className={styles.v}></source>
+            </video>
             <FormContainer>
-                <form onSubmit={handleSubmit}>
-                    <div className="brand">
-                        <img src="" alt="Kuddle Logo" />
-                        <h1>Kuddle</h1>
+                <form onSubmit={handleSubmit} className={styles.loginform}>
+                    <div className={styles.brand}>
+                        <h1>Login</h1>
                     </div>
                     {["email", "password"].map((field) => (
-                        <div className="inputbox" key={field}>
+                        <div className={styles.inputbox} key={field}>
+                            <label htmlFor={field}>{field.charAt(0).toUpperCase() + field.slice(1).replace(/([A-Z])/g, ' $1')}</label>
                             <input
                                 type={field === "password" || field === "confirmPassword" ? "password" : field === "email" ? "email" : "text"}
                                 name={field}
@@ -86,16 +91,16 @@ function Login() {
                                 placeholder={field.charAt(0).toUpperCase() + field.slice(1).replace(/([A-Z])/g, ' $1')}
                                 onChange={handleChange}
                             />
-                            <label htmlFor={field}>{field.charAt(0).toUpperCase() + field.slice(1).replace(/([A-Z])/g, ' $1')}</label>
                         </div>
                     ))}
-                    <button type="submit">Login</button>
+                    <button type="submit" className={styles.logbut}>Login</button>
                     <span>
-                        Don't have an account? <Link to="/signup">Sign Up</Link>
+                        Don't have an account? <Link to="/signup" className={styles.signup}>Sign Up</Link>
                     </span>
                 </form>
             </FormContainer>
             <ToastContainer />
+            </div>
         </>
     );
 }
