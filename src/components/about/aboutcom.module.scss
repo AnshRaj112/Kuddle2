@@ -1,0 +1,63 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+.aboutbody {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: white;
+        }
+
+.abouthead, .aboutfoot {
+            color: black;
+            background-color: #FFCDEA;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+.abouthead h1,.abouthead p,.aboutfoot h3,.aboutfoot p{
+    color: black;
+}
+
+.aboutfoot p a{
+    color: blue;
+}
+
+.abouthead h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+.aboutsec {
+            margin-bottom: 20px;
+        }
+
+.abouth2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+.abouth3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+.aboutul, .aboutol {
+            margin-left: 20px;
+        }
+
+.aboutli {
+            margin-left: 40px;
+            margin-bottom: 5px;
+            list-style:disc;
+        }
+
+.aboutfoot {
+            display: grid;
+            text-align: center;
+        }
+
+.aboutfoot p {
+            margin: 0;
+        }

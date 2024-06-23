@@ -1,0 +1,272 @@
+.profilesec{
+    min-height: 35.6rem;
+    // height: 100vh;
+}
+
+.profileback{
+    position: absolute;
+    top: 5rem;
+    // background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.profileleft{
+    // background-color: aquamarine;
+    height: 40rem;
+    width: 42%;
+}
+
+.profileright{
+    // background-color: pink;
+    height: 40rem;
+    width: 52%;
+}
+
+.pfp img{
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    right: -11rem;
+}
+
+.profileback .box{
+    height: 3.5rem;
+    width: 20rem;
+    background-color: purple;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-top: 20px;
+    position: relative;
+    right: -11rem;
+    cursor: default;
+}
+
+.profileleft .box{
+    position: relative;
+    right: -9rem;
+}
+
+.profileleft span{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.box1{
+    height: 10rem;
+    width: 20rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: purple;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin-top: 20px;
+    position: relative;
+    right: -11rem;
+    overflow: scroll;
+    scrollbar-width: none;
+    cursor: default;
+}
+
+.profileright .box1 strong{
+    font-size: 1.25rem;
+}
+
+.profileright .box1 p{
+    margin-top: 0.5rem;
+}
+
+
+.edit{
+    height: 3.5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.25rem;
+    background-color: rgb(48, 30, 48);
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    right: -9rem;
+}
+
+.photos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.imgbox img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1205px) {
+
+    .profileright{
+        width: 58%;
+    }
+}
+
+@media screen and (max-width:1105px) {
+
+    .photos{
+        margin-left: 2rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 10px;
+    }
+
+    .profilesec{
+        height: 42rem;
+    }
+
+}
+
+@media screen and (max-width:1025px) {
+    .profilesec{
+        height: 84rem;
+    }
+
+    .profileback{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding-left: 100px;
+    }
+
+    .profileleft{
+        width: 100%;
+    }
+
+    .profileright{
+        width: 100%;
+    }
+
+    .pfp img{
+        position: relative;
+        right: 0rem;
+    }
+
+    .profileback .box{
+        position: relative;
+        right: 0rem;
+        margin-left: -30px;
+    }
+
+    .profileleft button{
+        position: relative;
+        right: 0rem;
+        margin-left: -30px;
+    }
+
+    .box1{
+        right: 0rem;
+        margin-left: -30px;
+    }
+
+    .photos{
+        margin-left: -50px;
+        grid-template-columns: auto auto auto;
+        width: 60%;
+        column-gap: 20px;
+    }
+
+}
+
+@media screen and (max-width:965px) {
+
+    .profilesec{
+        height: 84rem;
+    }
+
+    .profileback{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding-left: 100px;
+    }
+
+    .profileleft{
+        width: 100%;
+    }
+
+    .profileright{
+        width: 100%;
+    }
+
+    .pfp img{
+        position: relative;
+        right: 0rem;
+    }
+
+    .profileback .box{
+        position: relative;
+        right: 0rem;
+        margin-left: -30px;
+    }
+
+    .profileleft button{
+        position: relative;
+        right: 0rem;
+        margin-left: -30px;
+    }
+
+    .box1{
+        right: 0rem;
+        margin-left: -30px;
+    }
+
+    .photos{
+        margin-left: 0px;
+        grid-template-columns: auto auto auto;
+        width: 60%;
+        column-gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 597px) {
+
+    .profilesec{
+        height: 92rem;
+    }
+
+    .profileback{
+        padding-left: 70px;
+    }
+    .photos{
+        margin-left: 0px;
+        grid-template-columns: auto auto auto;
+        width: 60%;
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+
+    .profilesec{
+        height: 102rem;
+    }
+
+    .profileback{
+        padding-left: 60px;
+    }
+    .photos{
+        grid-template-columns: auto auto;
+        width: 60%;
+        column-gap: 60px;
+        row-gap: 20px;
+        margin-left: 40px;
+    }
+}

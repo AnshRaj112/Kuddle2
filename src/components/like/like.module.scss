@@ -1,0 +1,299 @@
+/* heorsection */
+
+.likesec{
+    min-height: 35.6rem;
+}
+
+.likeback{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 5rem;
+}
+
+
+
+.left{
+    height: 40rem;
+    width: 50%;
+    /* background-color: aqua; */
+}
+
+/* right */
+
+.right{
+    height: 40rem;
+    width: 45%;
+    /* background-color: green; */
+}
+
+.pibox{
+    width: 100%;
+}
+
+
+.profileimg{
+    height: 31rem;
+    width: 26rem;
+    border: none;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+.imgpfp img{
+    height: 31rem;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.imgpfp{
+    width: 100%;
+}
+
+.imgtxt{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: default;
+    position: absolute;
+    bottom: 5px;
+    z-index: 1;
+}
+
+
+.likebtn{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 4.5rem;
+    width: 15rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black !important;
+    box-shadow: 3px 3px 3px rgb(205, 62, 62);
+}
+
+.dislike span svg{
+    font-size: 2.5rem;
+    stroke: black !important;
+    margin-top: 2px;
+}
+
+.like span svg{
+    fill: black !important;
+    margin-top: 2px;
+}
+
+.like{
+    background-color: pink;
+}
+
+.dislike{
+    background-color: wheat;
+}
+
+.choice{
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.pibox{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* left */
+
+.txtbox{
+    margin: 20px;
+    margin-left: 40px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.txtbox h2{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.moreimg{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.ibox img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1305px) {
+    .left{
+        width: 55%;
+    }
+
+    .right{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1205px) {
+    .moreimg{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width:1025px) {
+   .likeback{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+   }
+   .right{
+    order: 1;
+    width: 100%;
+   }
+
+   .left{
+    order: 2;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 50px;
+   }
+
+   .likesec{
+    height: 81rem;
+   }
+}
+
+@media screen and (max-width:686px) {
+    .profileimg{
+        width: 20rem;
+    }
+
+    .likebtn{
+        height: 4rem;
+        width: 13rem;
+    }
+}
+
+@media screen and (max-width:597px) {
+    .profileimg{
+        width: 26rem;
+    }
+
+    .likesec{
+        height: 83rem;
+    }
+
+    .likebtn{
+        height: 4rem;
+        width: 13rem;
+    }
+
+    .left{
+        order: 2;
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .moreimg{
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .moreimg{
+        grid-template-columns: auto auto;
+        width: 100%;
+        column-gap: 60px;
+        row-gap: 20px;
+        // margin-left: ;
+    }
+
+    .likesec{
+        height: 93rem;
+       }
+
+    .left{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .profileimg{
+        width: 24rem;
+        height: 31rem;
+    }
+
+    .likebtn{
+        height: 4rem;
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .profileimg{
+        width: 22rem;
+    }
+
+    .likebtn{
+        height: 3.5rem;
+        width: 10.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .likesec{
+        height: 95rem;
+       }
+}
+
+@media screen and (max-width: 410px) {
+
+
+    .profileimg{
+        width: 20rem;
+    }
+
+    .likebtn{
+        height: 3.25rem;
+        width: 10rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .moreimg{
+        grid-template-columns: auto auto;
+        width: 100%;
+        column-gap: 30px;
+    }
+
+    .likesec{
+        height: 95rem;
+    }
+
+    .txtbox{
+        margin-left: 30px;
+    }
+}

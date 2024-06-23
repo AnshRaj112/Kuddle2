@@ -4,6 +4,7 @@ import { SlArrowDown } from "react-icons/sl";
 import { FaUser } from "react-icons/fa";
 import { FaCrown } from "react-icons/fa6";
 import { LuLogOut } from "react-icons/lu";
+import { Link } from 'react-router-dom';
 
 export default function NavbarPro() {
 
@@ -12,14 +13,14 @@ export default function NavbarPro() {
       setisActive(!isActive)
     }
 
-    let cs2 = isActive ? '_active_tjkoo_70': '_deactive_tjkoo_76';
+    let cs2 = isActive ? styles.active: styles.deactive;
 
   return (
     <>
         <nav>
-            <a href="#">
+            <Link to="/">
                 <div className={styles.logo}></div>
-            </a>
+            </Link>
 
             <div className={styles.profiledropdown} >
                 <div className={styles.user} onClick={() => handleClick()}>
@@ -33,22 +34,22 @@ export default function NavbarPro() {
                 </div>
                 <ul className={`${styles.profiledropdownlist} ${cs2}`}>
                     <li className={styles.dropdownlistitem}>
-                        <a href="#">
+                        <Link to="/MyProfile" className={styles.link}>
                             <div><FaUser /></div>
                             Profile
-                        </a>
+                        </Link>
                     </li>
                     <li className={styles.dropdownlistitem}>
-                        <a href="#">
+                        <Link to="/Premium" className={styles.link}>
                             <div><FaCrown /></div>
                            <p>Premium</p> 
-                        </a>
+                        </Link>
                     </li>
                     <li className={styles.dropdownlistitem}>
-                        <a href="#">
+                        <Link to="/" className={styles.link}>
                             <div><LuLogOut /></div>
                             Logout
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

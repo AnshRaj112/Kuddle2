@@ -4,26 +4,27 @@ import { FaHeart } from "react-icons/fa";
 import { BsChatFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 import { IoSettingsSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 export default function Sidebarmob() {
   return (
     <>
       <div className={styles.sidebarmob}>
-                    <a href="#">
+                    <Link to="/Like" className={styles.link}>
                         <div className={styles.icon}><FaHeart /></div>
-                    </a>
+                    </Link>
 
-                    <a href="#">
+                    <Link to="#" className={styles.link}>
                         <div className={styles.icon}><BsChatFill /></div>
-                    </a>
+                    </Link>
 
-                    <a href="#">
+                    <Link to="/MyProfile" className={styles.link}>
                         <div className={styles.icon}><FaUser /></div>
-                    </a>
+                    </Link>
 
-                    <a href="#">
+                    <Link to="#" className={styles.link}>
                         <div className={styles.icon}><IoSettingsSharp /></div>
-                    </a>
+                    </Link>
       </div>
     </>
   )

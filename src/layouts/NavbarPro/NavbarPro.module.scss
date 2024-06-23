@@ -35,7 +35,7 @@ nav{
     align-items: center;
     /* justify-content: space-between; */
     position: absolute;
-    top: 0.25rem;
+    top: 0.5rem;
     right: 2rem;
     border-radius: 50px;
     border: 1px solid pink;
@@ -80,16 +80,18 @@ nav{
 }
 
 .profiledropdownlist{
-    height: 150px;
+    height: 155px;
     width: 200px;
     position: absolute;
-    top: 68px;
+    z-index: 2;
+    top: 70px;
     right: 2rem;
     background-color: black;
     border-radius: 10px;
     box-shadow: white;
     transition: all 0.5s ease;
 }
+
 
 .dropdownlistitem{
     list-style: none;
@@ -112,6 +114,10 @@ nav{
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+.dropdownlistitem .link{
+    color: white;
 }
 
 .dropdownlistitem:hover {

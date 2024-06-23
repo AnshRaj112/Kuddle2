@@ -3,6 +3,7 @@ import styles from './footer.module.scss'
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
       <footer>
         <div className={styles.container}>
             <div className={styles.logof}>
-                <a href=""><div className={styles.img}></div></a>
+                <Link to="/"><div className={styles.img}></div></Link>
             </div>
 
             <div className={styles.txt}>
@@ -29,9 +30,9 @@ export default function Footer() {
         
                 <div className={styles.socialm}>
                     <p>Follow Us on</p>
-                    <a href=""><FaFacebook /></a>
-                    <a href=""><FaInstagram /></a>
-                    <a href=""><FaXTwitter /></a>
+                    <a href="https://www.facebook.com" target='_blank'><FaFacebook /></a>
+                    <a href="https://www.instagram.com" target='_blank'><FaInstagram /></a>
+                    <a href="https://www.x.com" target='_blank'><FaXTwitter /></a>
                 </div>
               </div>
       </footer>
