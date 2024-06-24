@@ -73,9 +73,6 @@ function Login() {
     return (
         <>
         <div className={styles.container}>
-            <video autoPlay muted loop className={styles.video}>
-                <source src="https://cdn.builder.io/o/assets%2F9dc68989f2f648daa89c1c0422282306%2F70f8a3e877a4482bb9096de2c646b48f%2Fcompressed?apiKey=9dc68989f2f648daa89c1c0422282306&token=70f8a3e877a4482bb9096de2c646b48f&alt=media&optimized=true " type="video/mp4" className={styles.v}></source>
-            </video>
             <FormContainer>
                 <form onSubmit={handleSubmit} className={styles.loginform}>
                     <div className={styles.brand}>
